@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PlayAudio_XF"
+             x:Class="PlayAudio_XF.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Search Audio File" x:Name="btnSearch" Clicked="btnSearch_Clicked"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"></Button>
+
+
+            <Button Text="Play me!" Clicked="Button_Clicked"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"></Button>
+
+            <Button x:Name="btnStop" Clicked="btnStop_Clicked" Text="Stop" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"></Button>
+
+
+
+            <!--<StackLayout Orientation="Horizontal" VerticalOptions="End" Grid.Row="2">
+                <Label x:Name="volumeLabel" Text="Volume (0-100):" HorizontalOptions="Start"></Label>
+                <Entry x:Name="volumeEntry" Text="100" Keyboard="Numeric"  HorizontalOptions="StartAndExpand" WidthRequest="100"></Entry>
+                <Button x:Name="setVolumeBtn" Text="Set Volume" HorizontalOptions="Start" Clicked="SetVolumeBtn_OnClicked"></Button>
+                <Button x:Name="mutedBtn" Text="Mute" HorizontalOptions="End" Clicked="MutedBtn_OnClicked"></Button>
+            </StackLayout>-->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
