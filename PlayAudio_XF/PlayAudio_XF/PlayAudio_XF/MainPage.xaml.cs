@@ -24,11 +24,11 @@ namespace PlayAudio_XF
         {
             InitializeComponent();
 
-            this.volumeLabel.Text = "Volume (0-" + CrossMediaManager.Current.VolumeManager.MaxVolume + ")";
-            //Initialize Volume settings to match interface
-            int.TryParse(this.volumeEntry.Text, out var vol);
-            CrossMediaManager.Current.VolumeManager.CurrentVolume = vol;
-            CrossMediaManager.Current.VolumeManager.Mute = false;
+            //this.volumeLabel.Text = "Volume (0-" + CrossMediaManager.Current.VolumeManager.MaxVolume + ")";
+            ////Initialize Volume settings to match interface
+            //int.TryParse(this.volumeEntry.Text, out var vol);
+            //CrossMediaManager.Current.VolumeManager.CurrentVolume = vol;
+            //CrossMediaManager.Current.VolumeManager.Mute = false;
         }
 
         protected override void OnAppearing()

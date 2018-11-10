@@ -110,6 +110,7 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"PCLStorage.Abstractions.dll",
 		"PCLStorage.dll",
+		"PlayAudio_XF.dll",
 		"Plugin.FilePicker.Abstractions.dll",
 		"Plugin.FilePicker.dll",
 		"Plugin.MediaManager.Abstractions.dll",
@@ -132,7 +133,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"PlayAudio_XF.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

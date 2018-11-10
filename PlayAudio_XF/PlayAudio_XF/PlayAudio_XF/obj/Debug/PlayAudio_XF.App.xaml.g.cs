@@ -11,7 +11,8 @@
 namespace PlayAudio_XF {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Jdotel\\source\\repos\\PlayAudio_XF\\PlayAudio_XF\\PlayAudio_XF\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("F:\\XamarinProjects\\PlayAudioFile_XF\\PlayAudio_XF\\PlayAudio_XF\\PlayAudio_XF\\App.xa" +
+        "ml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
