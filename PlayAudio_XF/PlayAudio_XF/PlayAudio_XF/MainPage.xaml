@@ -16,7 +16,8 @@
             <Button x:Name="btnStop" Clicked="btnStop_Clicked" Text="Stop" VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"></Button>
 
-
+            <Button Text="Next" x:Name="btnPlayLocal" Clicked="btnPlayLocal_Clicked"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"></Button>
 
             <!--<StackLayout Orientation="Horizontal" VerticalOptions="End" Grid.Row="2">
                 <Label x:Name="volumeLabel" Text="Volume (0-100):" HorizontalOptions="Start"></Label>

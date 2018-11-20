@@ -14,5 +14,8 @@ namespace PlayAudio_XF.Services
         bool CloseMp3Player();
 
         bool PlayWavFile(string fileName);
+
+
+        void PlayLocalFile(int fileNumber);
     }
 }

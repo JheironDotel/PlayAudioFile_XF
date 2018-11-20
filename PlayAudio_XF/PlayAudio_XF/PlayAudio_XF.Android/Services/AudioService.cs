@@ -48,7 +48,7 @@ namespace PlayAudio_XF.Droid.Services
 
             //var fileqq = Android.Net.Uri.FromFile(new File(fileName));
             //_mediaPlayer = MediaPlayer.Create(global::Android.App.Application.Context, fileqq);
-            //_mediaPlayer.Start();   
+            //_mediaPlayer.Start();
 
         }
 
@@ -78,5 +78,40 @@ namespace PlayAudio_XF.Droid.Services
 
             return true;
         }
+
+
+        public void PlayLocalFile(int fileNumber)
+        {
+            if (_mediaPlayer == null)
+            {
+                _mediaPlayer = new MediaPlayer();
+            }
+
+            ///*_mediaPlayer.Reset();
+            ////await _mediaPlayer.SetDataSourceAsync(fs.FD,);
+            //await _mediaPlayer.SetDataSourceAsync(global::Android.App.Application.Context, fileqq);
+            //_mediaPlayer.SetAudioStreamType(Stream.Music);
+            //_mediaPlayer.PrepareAsync();
+            //_mediaPlayer.Start();
+
+
+            //audio en una carpeta del proyecto de android
+            if (fileNumber == 1)
+            {
+                _mediaPlayer = MediaPlayer.Create(global::Android.App.Application.Context, Resource.Raw.Horse_1);
+            }
+            else if (fileNumber == 2)
+            {
+                _mediaPlayer = MediaPlayer.Create(global::Android.App.Application.Context, Resource.Raw.Cat_2);
+            }
+            else if (fileNumber == 3)
+            {
+                _mediaPlayer = MediaPlayer.Create(global::Android.App.Application.Context, Resource.Raw.Dog_3);
+            }
+
+            _mediaPlayer.Start();
+
+        }
+
     }
 }

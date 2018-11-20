@@ -13,7 +13,7 @@ namespace PlayAudio_XF
         {
             InitializeComponent();
 
-            MainPage = new PlayAudio_XF.MainPage();
+            MainPage = new NavigationPage(new PlayAudio_XF.MainPage());
         }
 
         protected override void OnStart()

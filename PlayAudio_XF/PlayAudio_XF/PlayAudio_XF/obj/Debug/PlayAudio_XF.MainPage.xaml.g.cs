@@ -11,8 +11,8 @@
 namespace PlayAudio_XF {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("F:\\XamarinProjects\\PlayAudioFile_XF\\PlayAudio_XF\\PlayAudio_XF\\PlayAudio_XF\\MainPa" +
-        "ge.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Jdotel\\source\\repos\\PlayAudioFile_XF\\PlayAudio_XF\\PlayAudio_XF\\PlayAudio" +
+        "_XF\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -22,10 +22,14 @@ namespace PlayAudio_XF {
         private global::Xamarin.Forms.Button btnStop;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnPlayLocal;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
             btnSearch = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnSearch");
             btnStop = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnStop");
+            btnPlayLocal = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnPlayLocal");
         }
     }
 }

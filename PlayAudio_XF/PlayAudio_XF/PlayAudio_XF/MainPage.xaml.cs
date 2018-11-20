@@ -62,7 +62,8 @@ namespace PlayAudio_XF
                         Availability = ResourceAvailability.Local,
                         Url = picketFilePath
                         //,Metadata = new MediaFileMetadata() { Title = "My Title", Artist = "My Artist", Album = "My Album" },
-                        ,MetadataExtracted = true                        
+                        ,
+                        MetadataExtracted = true
                     };
 
                     //await CrossMediaManager.Current.Play(picketFilePath);
@@ -78,7 +79,7 @@ namespace PlayAudio_XF
 
         private async void btnStop_Clicked(object sender, EventArgs e)
         {
-            await CrossMediaManager.Current.Stop();            
+            await CrossMediaManager.Current.Stop();
         }
 
         private void SetVolumeBtn_OnClicked(object sender, EventArgs e)
@@ -142,5 +143,11 @@ namespace PlayAudio_XF
 
         #endregion
 
+        private async void btnPlayLocal_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayLocalFile(1);
+
+            await Navigation.PushAsync(new SecondPage());
+        }
     }
 }
