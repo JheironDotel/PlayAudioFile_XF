@@ -48,7 +48,7 @@ namespace PlayAudio_XF.Droid.Services
 
             //var fileqq = Android.Net.Uri.FromFile(new File(fileName));
             //_mediaPlayer = MediaPlayer.Create(global::Android.App.Application.Context, fileqq);
-            //_mediaPlayer.Start();
+            //_mediaPlayer.Start();   
 
         }
 
